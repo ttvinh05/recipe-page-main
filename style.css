@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+ul, ol {
+    padding-left: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    padding-left: 16px;
+}
+
+#container {
+    background-color: var(--stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1700px;
+} 
+
+main {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 47vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    color: var(--stone-900);
+}
+
+.title-des {
+    color: var(--stone-600);
+}
+
+.preparation {
+    background-color: var(--rose-50);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.preparation__title {
+    margin-bottom: 10px;
+    color: var(--rose-800);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.preparation-list {
+    color: var(--stone-600);
+}
+
+.preparation__item::marker {
+    color: var(--rose-800);
+}
+
+.ingredients {
+    margin-top: 6px;
+    padding-bottom: 27px;
+    border-bottom: solid 1px var(--stone-150);
+}
+
+.ingredients__title {
+    margin-bottom: 20px;
+    color: var(--brown-800);
+}
+
+.ingredients__item {
+    color: var(--stone-600);
+}
+
+.ingredients__item::marker {
+    color: var(--brown-800);
+}
+
+.instructions {
+    padding-bottom: 27px;
+    border-bottom: solid 1px var(--stone-150);
+}
+
+.instructions__title {
+    margin-bottom: 20px;
+    color: var(--brown-800);
+}
+
+.instruction__item {
+    color: var(--stone-600);
+}
+
+.instruction__item::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nutrition__title {
+    color: var(--brown-800);
+}
+
+.nutrition__title-des {
+    color: var(--stone-600);
+}
+
+.table-row {
+    display: flex;
+    padding: 12px 30px;
+    border-bottom: solid 1px var(--stone-150);
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row__name {
+    color: var(--stone-600);
+    width: 50%;
+}
+
+.table-row__gram {
+    color: var(--brown-800);
+    margin-left: 18px;
+}
+
+@media (max-width: 739px) {
+    #container {
+        display: block;
+    }
+
+    main {
+        width: 100%;
+    }
+}
